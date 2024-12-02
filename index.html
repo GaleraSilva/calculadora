@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Maciel Francisco (Luk4x)">
+    <link rel="shortcut icon" href="faviconluk4x.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-list-item"></li>
+                <li class="menu-list-item"></li>
+                <div class="indicator"></div>
+            </ul>
+        </nav>
+        <section>
+            <input disabled id="displayCalc">
+            <button onclick="displayClear()" class="item button-operations" id="backspace-key">AC</button>
+            <button onclick="invertSign()" class="item button-operations" id="moreMinus-key">+/-</button>
+            <button onclick="percentCalc()" class="item button-operations" id="percent-key">%</button>
+            <button onclick="insertValues('/')" class="item button-operations-right" id="division-key">÷</button>
+            <button onclick="insertValues('7')" class="item button-numbers" id="seven-key">7</button>
+            <button onclick="insertValues('8')" class="item button-numbers" id="eight-key">8</button>
+            <button onclick="insertValues('9')" class="item button-numbers" id="nine-key">9</button>
+            <button onclick="insertValues('*')" class="item button-operations-right" id="mutiplication-key">x</button>
+            <button onclick="insertValues('4')" class="item button-numbers" id="four-key">4</button>
+            <button onclick="insertValues('5')" class="item button-numbers" id="five-key">5</button>
+            <button onclick="insertValues('6')" class="item button-numbers" id="six-key">6</button>
+            <button onclick="insertValues('-')" class="item button-operations-right" id="minos-key">-</button>
+            <button onclick="insertValues('1')" class="item button-numbers" id="one-key">1</button>
+            <button onclick="insertValues('2')" class="item button-numbers" id="two-key">2</button>
+            <button onclick="insertValues('3')" class="item button-numbers" id="three-key">3</button>
+            <button onclick="insertValues('+')" class="item button-operations-right" id="plus-key">+</button>
+            <button onclick="insertValues('0')" class="item zero button-numbers" id="zero-key">0</button>
+            <button onclick="insertValues('.')" class="item button-numbers" id="point-key">,</button>
+            <button onclick="calculate()" class="item equal button-operations-right" id="equal-key">=</button>
+        </section>
+        <footer class="social-links">
+            <ul class="social-links-list">
+                <li class="social-links-list-item">
+                    <a href="https://github.com/Luk4x" target="_blank" rel="external">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </li>
+                <li class="social-links-list-item">
+                    <a href="https://www.linkedin.com/in/lucasmacielf/" target="_blank" rel="external">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                </li>
+                <li class="social-links-list-item">
+                    <a href="https://www.instagram.com/lu_k4x/" target="_blank" rel="external noopener noreferrer">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+                </li>
+                <li class="social-links-list-item">
+                    <a href="https://wa.me/5522996112570?text=Yo,%20sinta-se%20livre%20para%20entrar%20em%20contato%20comigo." target="_blank" rel="external">
+                        <i class='bx bxl-whatsapp-square'></i>
+                    </a>
+                </li>
+                <li class="social-links-list-item">
+                    <a href="https://t.me/lu_k4x" target="_blank" rel="external">
+                        <i class='bx bxl-telegram'></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
